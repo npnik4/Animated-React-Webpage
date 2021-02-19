@@ -1,0 +1,98 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: rgba(104, 225, 253, 0.18);
+    margin: 0;
+    display: grid;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    padding: 15em 0;
+    height: 100vh;
+
+    h1 {
+        font-size: 5em;
+        margin: 0;
+    }
+
+    p {
+        font-size: 1.6em;
+        margin: 0;
+    }
+
+    svg {
+        margin-top: 1em;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        overflow: visible;
+    }
+
+    .cloud1 {
+        animation: cloud-anim 25s alternate-reverse infinite linear;
+    }
+
+    .cloud2 {
+        animation: cloud-anim 20s alternate-reverse infinite linear;
+    }
+
+    .cloud3 {
+        animation: cloud-anim 17s alternate-reverse infinite linear;
+    }
+
+    @keyframes cloud-anim {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(-70px);
+        }
+        
+    }
+
+}
+
+
+section {
+    text-align: center;
+    padding: 1em 0.3em;
+    height: 100vh;
+
+    p {
+        font-size: 1.5em;
+    }
+}
+
+h2 {
+    font-size: 3em;
+    // margin-top: 3em;
+}
+
+
+@media screen and (max-width: 460px) {
+    .container { 
+        padding: 6em 0;
+
+        h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+    
+        p {
+            font-size: 1.6em;
+            margin: 0;
+        }
+
+        svg {
+            height: 110%;
+            width: 110%;
+        }
+
+    }
+
+}
